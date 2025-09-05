@@ -8,7 +8,10 @@ Link del primo [meetup](https://www.meetup.com/pyvenice/events/310450900/) di Py
 
 Arrivare ad una consapevolezza degli strumenti **#OpenSource** che possono risultare utili per il **#VibeCoding**:
 
-* usare un modello di Language Model (LM) in locale
+* usare un modello di Language Model dal server
+* usare un agente AI dal server
+* installare ollama o LM Studio
+* usare un modello di Language Model in locale
 * usare un agente AI in locale
 * usare un IDE con i propri modelli e i propri agenti
 
