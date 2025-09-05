@@ -112,6 +112,11 @@ Quando saremo all'ESC avremo il wifi, ma non potremo metterci tutti a scaricare 
 
 In realtà, **esistono modelli che possono funzionare anche con 8GB di RAM**, come [qwen3:4b](https://ollama.com/library/qwen3:4b) per sperimentare tutto il percorso in locale.
 
+```sh
+# model download, pull example
+ollama pull qwen3
+```
+
 ## Exercises
 
 ### by CLI
@@ -133,6 +138,18 @@ curl http://localhost:11434/api/generate -d '{
   "stream": false
 }'
 {"model":"qwen3","created_at":"2025-09-02T10:00:00.000000001Z","response":"Alessandro Manzoni","done":true, ..}
+```
+
+```sh
+curl http://localhost:11434/api/chat -d '{
+  "model": "qwen3",
+  "messages": [
+    {"role": "system", "content": "Sei un assistente di un docente universitario."},
+    {"role": "user", "content": "Spiegami come funzionano le API di Ollama in breve."}
+  ],
+  "stream": false
+}'
+{"model":"qwen2.5","created_at":"2025-09-05T14:18:57.735523384Z","message":{"role":"assistant","content":"Le API di Ollama sono strumenti software che consentono l'integrazione e l'interazione tra vari servizi digitali o applicazioni. Specificamente, Ollama offre API per diverse funzionalità, come la generazione di testi, la traduzione, la ricerca su dati e altro ancora.\n\nIn pratica, un utente può inviare richieste attraverso queste API in formato JSON o altri formati di codifica standard. .."}
 ```
 
 ### by Python
@@ -166,11 +183,26 @@ python ollama.python.py
 
 Il codice degli esempi che andremo a vedere sono scaricabili da [GitHub](https://github.com/aittalam/esc2025_agents_workshop) e sono basati su [any-agent](https://github.com/mozilla-ai/any-agent).
 
+### OpenAI simulation
+
+#### Ollama
+
+Potrebbe bastare impostare le variabili d'ambiente
+
+```sh
+export OPENAI_API_BASE=http://localhost:11434/v1
+export OPENAI_API_KEY=ollama
+```
+
+Poi da script Python le usi,
+
+```sh
+# run script
+cd meetups/2025/09
+python ollama.openai.py
+```
+
 ### by GUI
-
-#### WebAssembly (Wasm)
-
-Per chi non sviluppa, è possibile sfruttare un'interfaccia web apposita che si chiama [Wasm-agents](https://github.com/aittalam/wasm-agents-blueprint/tree/esc2025): è possibile scaricare direttamente una [versione che punta al server](https://github.com/aittalam/wasm-agents-blueprint/tree/esc2025/demos) che sarà messo a disposizione durante il **#lab**.
 
 #### LM Studio
 
@@ -189,11 +221,51 @@ E lato sviluppatori,
 Quindi, facendo partire il file scaricato dalla pagina di [download](https://lmstudio.ai/download) nel seguente modo,
 
 ```sh
-chmod +x LM_Studio-*.AppImage
-./LM_Studio-*.AppImage
+chmod +x LM-Studio-*.AppImage
+./LM-Studio-*.AppImage
 ```
 
-**to be continued ..**
+Usiamo la versione "Power user" e skippa in alto a destra.
+
+* dall'iconcina viola, possiamo scaricare un modello
+* dall'iconcina rossa, possiamo gestire i modelli
+  * dall'iconcina della configurazione del modello, è possibile modificare alcuni parametri
+    * Context length
+* dall'iconcina verde, possiamo gestire le API
+  * bisogna verificare che lo Status del server sia Running
+  * su Settings abilitare CORS
+  * selezionare un modello di riferimento
+
+#### WebAssembly (Wasm)
+
+Per chi non sviluppa, è possibile sfruttare un'interfaccia web apposita che si chiama [Wasm-agents](https://github.com/aittalam/wasm-agents-blueprint/tree/esc2025): è possibile scaricare direttamente una [versione che punta al server](https://github.com/aittalam/wasm-agents-blueprint/tree/esc2025/demos) che sarà messo a disposizione durante il **#lab**.
+
+Se non usi il client git, usa direttamente lo [zip](https://github.com/aittalam/wasm-agents-blueprint/archive/refs/heads/esc2025.zip) oppure via git:
+
+```sh
+# project download
+git clone https://github.com/aittalam/wasm-agents-blueprint
+cd wasm-agents-blueprint/demos
+git fetch origin esc2025
+git checkout esc2025
+pwd
+~/github/bilardi/pyvenice.meetups/2025/09/workshop/wasm-agents-blueprint/demos
+# on browser
+file:///home/bilardi/github/bilardi/pyvenice.meetups/2025/09/workshop/wasm-agents-blueprint/demos
+```
+
+Gli script che possiamo usare sono:
+
+* local_model.html
+  * conta dei caratteri in una stringa
+  * visita una pagina web
+* local_mcpd.html
+  * in **Available Tools** ci sono gli agenti che si possono richiamare
+
+Domande da provare:
+
+* What are the novels by Cory Doctorow, sorted by date ? Search on zim
+* Quali sono i romanzi di Cory Doctorow, ordinati per data ? Cerca su zim.
 
 #### IDE
 
