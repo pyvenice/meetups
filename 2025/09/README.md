@@ -8,11 +8,12 @@ Link del primo [meetup](https://www.meetup.com/pyvenice/events/310450900/) di Py
 
 Arrivare ad una consapevolezza degli strumenti **#OpenSource** che possono risultare utili per il **#VibeCoding**:
 
-* usare un modello di Language Model dal server
-* usare un agente AI dal server
+* usare un modello di Language Model dal server ([WASM](https://github.com/aittalam/wasm-agents-blueprint/tree/esc2025), local_model.html)
+* usare un agente AI dal server ([WASM](https://github.com/aittalam/wasm-agents-blueprint/tree/esc2025), local_mcpd.html)
 * installare ollama o LM Studio
-* usare un modello di Language Model in locale
-* usare un agente AI in locale
+* usare un modello di Language Model in locale ([WASM](https://github.com/aittalam/wasm-agents-blueprint/tree/esc2025), local_model.html)
+* implementare i propri agenti AI ([esc2025_agents_workshop](https://github.com/aittalam/esc2025_agents_workshop))
+* usare un agente AI in locale ([WASM](https://github.com/aittalam/wasm-agents-blueprint/tree/esc2025), local_model.html)
 * usare un IDE con i propri modelli e i propri agenti
 
 Per chi comincia da zero, probabile che questo sia l'inizio di un percorso e che non si tocchino tutti i punti. Ma è a disposizione un canale discord per approfondire e fare domande: la community risponderà. Se non hai il link al canale discord, contattaci su [telegram](https://venice.python.it).
@@ -100,6 +101,9 @@ Alcuni tips & tricks importanti:
   * Element Labs concede all’utente una licenza non esclusiva, non trasferibile, valida solo per uso personale o interno aziendale e in accordo con la documentazione
   * L’uso commerciale è ammesso senza costi aggiuntivi, ma va fatto secondo le regole indicate e senza redistribuire o modificare il software
 * per abilitare CORS, è necessario installare su Firefox [CORS Everywhere](https://addons.mozilla.org/en-US/firefox/addon/cors-everywhere/) o su Chrome [Cross Domain - CORS](https://chromewebstore.google.com/detail/cross-domain-cors/mjhpgnbimicffchbodmgfnemoghjakai) ([dettagli](https://github.com/mozilla-ai/wasm-agents-blueprint?tab=readme-ov-file#troubleshooting))
+  * il Cross-Origin Resource Sharing (CORS), che è un sistema di permessi tra siti web gestito dai browser per evitare accessi non autorizzati
+    * le API di Ollama gireranno in locale su di una determinata porta
+    * le richieste a quelle API gireranno in locale, ma su una porta differente: questo per il browser vuol dire un sito differente e se non si attivano le regole CORS, la richiesta sarà bloccata
 
 ### Modelli che potreste scaricare in locale
 
