@@ -249,9 +249,9 @@ cd wasm-agents-blueprint/demos
 git fetch origin esc2025
 git checkout esc2025
 pwd
-~/github/bilardi/pyvenice.meetups/2025/09/workshop/wasm-agents-blueprint/demos
+~/[path]/workshop/wasm-agents-blueprint/demos
 # on browser
-file:///home/bilardi/github/bilardi/pyvenice.meetups/2025/09/workshop/wasm-agents-blueprint/demos
+file:///[path]/workshop/wasm-agents-blueprint/demos
 ```
 
 Gli script che possiamo usare sono:
