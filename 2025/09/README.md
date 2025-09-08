@@ -2,7 +2,11 @@
 
 Ospitati dall'[ESC](https://endsummer.camp/), [Marco Gaion](https://www.linkedin.com/in/marco-gaion/) e [Davide Eynard](https://www.linkedin.com/in/deynard/) hanno proposto 3 speech sulla **#GenerativeAI** conclusisi con un **#lab** che ha visto il supporto dello staff di PyVenice.
 
-Link del primo [meetup](https://www.meetup.com/pyvenice/events/310450900/) di PyVenice, [agenda](https://pretalx.endsummer.camp/2K25/talk/) dell'ESC.
+Link:
+
+* primo [meetup](https://www.meetup.com/pyvenice/events/310450900/) di PyVenice
+* [agenda](https://pretalx.endsummer.camp/2K25/talk/) dell'ESC
+* slide del [lab](PyVenice0.lab.pdf)
 
 ## Scopo del lab
 
