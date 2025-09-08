@@ -279,4 +279,4 @@ Domande da provare:
 Per chi sviluppa, è possibile installare un'estensione come [Continue](https://www.continue.dev/) per sfruttare:
 
 * i modelli installati localmente con Ollama o LM Studio 
-* gli agenti preparati con Python
+* gli agenti preparati con Ollama e/o Python nella [guida avanzata](AGENTS_AI.md)
