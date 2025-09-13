@@ -4,8 +4,11 @@ Ospitati dall'[ESC](https://endsummer.camp/), [Marco Gaion](https://www.linkedin
 
 Link:
 
-* primo [meetup](https://www.meetup.com/pyvenice/events/310450900/) di PyVenice
-* [agenda](https://pretalx.endsummer.camp/2K25/talk/) dell'ESC
+* primo [meetup](https://www.meetup.com/pyvenice/events/310450900/) di PyVenice e [agenda](https://pretalx.endsummer.camp/2K25/talk/) dell'ESC
+  * 📽️ [Presentazione e Pappagalli Stocastici Hackerare gli LLM per capire cosa sono e non sono](https://www.youtube.com/watch?v=XjpO9wMchko&list=PL-8hpaXWo9guJT1fkMotyu0FPdY4qKVc9&index=13) di Marco Gaion
+  * 📽️ [Oltre il Pappagallo: Anatomia di un Language Model](https://www.youtube.com/watch?v=BuidHYKDBz8&list=PL-8hpaXWo9guJT1fkMotyu0FPdY4qKVc9&index=15) di Marco Gaion e Davide Eynard
+  * 📽️ [Agents to the people](https://www.youtube.com/watch?v=omFcDGKStE8&list=PL-8hpaXWo9guJT1fkMotyu0FPdY4qKVc9&index=12) di Davide Eynard
+  * 📽️ [Laboratorio: Il tuo primo Agente AI locale con strumenti Open Source](https://www.youtube.com/watch?v=cED1hMUFsgo&list=PL-8hpaXWo9guJT1fkMotyu0FPdY4qKVc9&index=11)
 * slide del [lab](PyVenice0.lab.pdf)
 
 ## Scopo del lab
